@@ -158,19 +158,7 @@ print(trump.regression)
 print(obama.maxima)
 print(obama.minima)
 
-def plot(*presidents, days):
-    counter = 0
-    fig = plt.figure()
-    plt.subplot(2,2,1)
-    for i in presidents:
-        president = i[0]
-        plt.plot(i.x,i.y,"o",color=[counter])
-        counter +=1
-    counter = 0
-    for i in presidents:
-        plt.plot(days, i.regression_y, "-", color=primary_colors[counter])
-        counter += 1
-    plt.show
+
 
 plt.subplot(2,2,1)
 plt.plot(trump.x,trump.y,"o",color="xkcd:pink")
